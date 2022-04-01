@@ -1,0 +1,22 @@
+.network{
+    &-heading{
+        max-width: 380px;
+        // nhấn mx là ra 2 cái dưới
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    &-image{
+        margin-top: 155px;
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .network-imagee{
+        margin-bottom: 50px ;
+    }
+    
+    
+
+
+}
+

@@ -1,0 +1,129 @@
+//  Những biến chung
+body{
+    line-height:1;
+    font-family: $font;
+    color: $text-color;
+    font-weight: 400;
+    background-color: white;
+    
+    }
+    button{
+        cursor: pointer;
+        outline: none;
+        border: none;  
+         font-family: $font;
+    }
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.button{
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 100rem;
+    font-family: $font;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+//  cursor là trỏ chuột
+border: none;
+outline: none;
+text-align: center;
+white-space: nowrap;
+
+&--primary{
+    font-weight: 700;
+   
+    color: #FFFFFF;
+    background: $primary_color;
+ 
+
+    
+}
+&--ouline{
+    background: transparent;
+    color: $primary_color;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1px solid;
+}
+&--rounded{
+    // border-radius: 10px;
+    // padding: 17px 65px;
+    // position: relative;   // Định vị trí tuyệt đối cho các thành phần
+    // &:after{
+    //     content: "";
+    //     position: absolute; //định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài, hoặc ít nhất là theo cửa sổ trình duyệt.
+    //     // inset: 0; nếu chiếm hết thì dùng inset
+    //     top: 0;
+    //     left: 50%;
+    //     height: 100%;
+    //     width: 90%;
+    //     background: rgba(245, 56, 56, 0.35);
+    // filter: blur(54px);
+    // border-radius: 10px;
+    // transform: translate(-50%,50%);
+    // z-index: -1;
+    // }
+
+
+    // cách 2 dùng 
+    border-radius: 10px;
+    padding: 17px 65px;
+    box-shadow:0 30px 54px -5px rgba(245, 56, 56, 0.35);
+    // 30 thấp hơn button bao nhiêu
+// 54px là độ nhạt:filter
+// -5px do nó đi vào
+
+
+
+
+}
+&--shadow{
+    // làm riêng để dành riêng thôi
+    // box-shadow:0 30px 54px -5px rgba(245, 56, 56, 0.35);
+   position: relative;   // Định vị trí tuyệt đối cho các thành phần
+    &:after{
+        content: "";
+        position: absolute; //định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài, hoặc ít nhất là theo cửa sổ trình duyệt.
+        // inset: 0; nếu chiếm hết thì dùng inset
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 90%;
+        background-color: rgba(245, 56, 56, 0.35);
+    filter: blur(54px);
+    border-radius: inherit;
+    transform: translate(-50%,50%);
+    z-index: -1;
+    }
+
+}
+
+
+
+
+}
+
+.boxed{
+    max-width:555px ;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+//  nếu màn hình khác thì menu không bị vỡ tỷ lệ nhấn @767
+@media screen and (max-width: 767.98px) {
+    .button{
+        padding: 13px 26px;
+    }
+}

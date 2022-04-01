@@ -1,0 +1,105 @@
+.hero{
+    padding-bottom: 100px;
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 40px;
+        position: relative;
+    }
+   
+&-content{
+    // width cho nó full rồi dung max-width cho nó keo lại
+    width: 100%;
+    max-width: 555px;
+   
+}
+//  mình đem cái này xuống để nếu có màn hình kích thước khác sẽ không bị lỗi
+// &-image{
+//     // Mặc định giá trị trong flex-shrink là 1 nghĩa là cho phép các phần tử co lại khi độ rộng container giảm xuống.
+//     //  Các bạn thấy chứ các phần tử nó sẽ co lại khi chúng ta resize trình duyệt nhỏ xuống.
+//     // flex-shrink: 0;
+//     transform: translate(150px - 83px);
+//     // cách dưới cần xem lại
+//     //  do container bình thường so với wrapper lớn hơn nên phải trừ vô
+//     position: absolute;
+//     top: 50%;
+//     transform: translate(40px, -50%);
+//     right: 0;
+// }
+&-heading{
+    font-family: $font;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: calc(70/50);// cách này dùng để nếu có scale
+    // là lấy khoảng cách chia cho size
+    // line-height: 70px;
+    margin-bottom: 20px;
+    color: $heading-color;
+    strong{
+        font-family: $font;
+        font-weight: 700;
+    }
+}
+&-desc{
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+    /* or 188% */
+    margin-bottom: 50px;
+    
+    color: $text-color;
+
+    strong{
+        font-family: $font;
+        font-weight: 500;
+    }
+
+}
+
+
+
+
+}
+@media screen and (min-width: 1280px) {
+    .hero-image{
+       
+            // Mặc định giá trị trong flex-shrink là 1 nghĩa là cho phép các phần tử co lại khi độ rộng container giảm xuống.
+            //  Các bạn thấy chứ các phần tử nó sẽ co lại khi chúng ta resize trình duyệt nhỏ xuống.
+            // flex-shrink: 0;
+            transform: translate(150px - 83px);
+            // cách dưới cần xem lại
+            //  do container bình thường so với wrapper lớn hơn nên phải trừ vô
+            position: absolute;
+            top: 50%;
+            transform: translate(40px, -50%);
+            right: 0;
+    
+    }
+
+}
+
+//  nếu màn hình khác thì menu không bị vỡ tỷ lệ nhấn @1230
+@media screen and (max-width: 1230.98px) {
+.hero-heading{
+    font-size: 30px;
+}
+.hero{
+    padding-bottom: 50px;
+}
+}
+@media screen and (max-width: 767.98px) {
+    .hero-container{
+        flex-direction: column-reverse; //hình nằm bên trên
+        // flex-direction: column; //hình nằm bên dưới
+      gap: 50px 0;
+    }
+    .hero-desc{
+        margin-bottom: 25px;
+    }
+ 
+}
+
+
+

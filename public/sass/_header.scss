@@ -1,0 +1,60 @@
+.header{
+   
+    padding-top: 50px;
+    padding-bottom: 90px ;
+    &-container{
+        // nhấn facb
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+&-auth{
+    // facenter
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    text-transform: capitalize;
+}
+&-signin{
+font-family: $font;
+font-weight: 500;
+color: $heading-color;
+}
+
+&-signup{
+    padding:13px 45px ;
+font-family: $font;
+font-weight: 500;
+border-radius: 100rem; // độ bo tròn hết cỡ nên đặt 100rem
+border: 1px solid;
+color: $primary_color;
+
+// cách 2 copy hết phân cuối của figma
+// color: #F53855;
+// border: 1px solid #F53855;
+// box-sizing: border-box;
+// border-radius: 50px; 
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+//  nếu màn hình khác thì menu không bị vỡ tỷ lệ nhấn @1023
+@media screen and (max-width: 1023.98px) {
+
+.header{
+    padding: 25px 0 50px ;
+}
+.header-auth{
+    display: none;
+}
+}

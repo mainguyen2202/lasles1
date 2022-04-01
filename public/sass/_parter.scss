@@ -1,0 +1,28 @@
+.parter{
+    // margin-top: 54px;
+    // margin-bottom: 95px
+    margin-bottom: 50px;
+    &-container{
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 60px;
+        
+       
+      
+      
+       
+    }
+    
+    
+}
+@media screen and (max-width: 1023.98px) {
+.parter-container{
+   gap: 0 20px ; 
+}
+}
+@media screen and (max-width: 767.98px) {
+    .parter{
+        margin-bottom: 30px;
+    }}

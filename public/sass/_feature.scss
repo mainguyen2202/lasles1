@@ -1,0 +1,46 @@
+.feature{
+    padding-bottom: 130px;
+    &-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 170px;
+    }
+ 
+   
+    &-decs{
+        margin-bottom: 23px;
+    }
+    &-list{
+        list-style-type: none;// mất dấu chấm
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        font-size: 14px;
+        margin-bottom: 21px;
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 1023.98px) {
+    .feature-container{
+        gap: 0 30px;
+        align-items: center;
+        padding-bottom: 50px ;
+    }
+    .feature{
+        padding-bottom: 95px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .feature{
+        padding-bottom: 50px;
+    }
+    .feature-container{
+       flex-direction: column; // là cho nó xuống thành hàng
+       gap: 50px 0;
+    }
+}
+

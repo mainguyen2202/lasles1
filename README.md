@@ -9,8 +9,13 @@ Cách 1: sẽ tạo cùng foder sass
 
 sass sass/app.scss sass/app.css --watch 
 
+
+// sass ./sass/app.scss ./sass/app.css --watch
+
 cách 2: sẽ tạo ra 1 foder mới cho css
 sass sass/app.scss css/app.css
+
+//  sass ./sass/app.scss ./css/app.css --watch
 
 <!--  -->
         1. facb
